@@ -4,15 +4,19 @@ import './App.css'
 import Navbar from './components/Navbar'
 import {Box} from "@mui/material"
 import Welcome from './components/Welcome'
+import AboutMe from './components/Aboutme'
+import Portfolio from './components/Portfolio'
 
 function App() {
   
 
   return (
     <>
-    <Box sx={{backgroundColor:"#101630", height:"100vh",width:'100vw'}} >
+    <Box sx={{backgroundColor:"#101630", height:"100%"}} >
     <Navbar/>
     <Welcome/>
+    <AboutMe/>
+    <Portfolio/>
     </Box>
    
     </>
