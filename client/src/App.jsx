@@ -6,6 +6,7 @@ import {Box} from "@mui/material"
 import Welcome from './components/Welcome'
 import AboutMe from './components/Aboutme'
 import Portfolio from './components/Portfolio'
+import Skills from './components/Skills'
 
 function App() {
   
@@ -16,6 +17,7 @@ function App() {
     <Navbar/>
     <Welcome/>
     <AboutMe/>
+    <Skills/>
     <Portfolio/>
     </Box>
    

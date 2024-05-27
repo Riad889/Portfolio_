@@ -8,7 +8,7 @@ const ProjectBox=styled(Box)(({theme})=>({
     width:'70%',
     marginLeft:'10%',
     justifyContent:'space-evenly',
-    marginTop:'20px',
+    marginTop:'5%',
     // flexDirection: index % 2 === 0 ? 'row-reverse' : 'row', // Conditionally set flexDirection
     [theme.breakpoints.down('md')]:{
         flexDirection:'column'

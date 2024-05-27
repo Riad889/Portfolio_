@@ -9,8 +9,19 @@ const AboutMeBox = styled(Box)(({ theme }) => ({
   width: "50%", // Ensure the container has a full width
   [theme.breakpoints.down("md")]: {
     flexDirection: "column",
+    marginTop:'5%',
   },
 }));
+
+const DescriptionBox=styled(Box)(({theme})=>({
+  display: "flex",
+  flexDirection: "column",
+  width: "100%",
+  marginLeft: "30px",
+  [theme.breakpoints.down("md")]:{
+    marginTop:'20px',
+  }
+}))
 
 const AboutMe = () => {
   return (
@@ -51,13 +62,8 @@ const AboutMe = () => {
           src="https://i.pinimg.com/564x/f7/0d/19/f70d19f006aa6f95630b0dc15b885f2d.jpg"
           alt="img"
         />
-        <Box
-          sx={{
-            display: "flex",
-            flexDirection: "column",
-            width: "100%",
-            marginLeft: "30px",
-          }}
+        <DescriptionBox
+          
         >
           <Typography sx={{ whiteSpace: "normal", color: "#999EA8" }}>
             Hi, I'm{" "}
@@ -109,7 +115,7 @@ const AboutMe = () => {
               Resume
             </Button>
           </Box>
-        </Box>
+        </DescriptionBox>
       </AboutMeBox>
     </>
   );
