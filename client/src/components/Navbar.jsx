@@ -19,6 +19,7 @@ const NavBarATitleBox = styled(Box)(({ theme }) => ({
   display: "flex",
   justifyContent: "space-between",
   alignItems: "center",
+ 
   [theme.breakpoints.down("md")]: {
     display: "none",
   },
@@ -65,7 +66,7 @@ const SliderIconMenu = styled(MenuIcon)(({ theme }) => ({
 const MenuPopup = styled("div")(({ theme }) => ({
     
   position: "absolute",
-  top: "40px",
+  top: "58px",
   left: "10px",
   backgroundColor: "white",
   border: "1px solid black",
@@ -117,12 +118,17 @@ const Navbar = () => {
 
   return (
     <>
-      <Box
-        sx={{
+      <div
+        style={{
           display: "flex",
           justifyContent: "space-between",
           padding: "20px",
+          top: '0',
+          backgroundColor: '#101630',
           alignItems: "center",
+          position: 'sticky',
+          boxShadow: '0 4px 8px rgba(16, 22, 48, 0.8), 0 10px 10px -5px rgba(255, 255, 255, 0.2)', // Slightly transparent box shadow of the same color, plus a lighter shadow at the bottom
+          zIndex: 1000,
       
         }}
       >
@@ -159,7 +165,7 @@ const Navbar = () => {
             Contact
           </Button>
         </NavBarATitleBox>
-      </Box>
+      </div>
     </>
   );
 };

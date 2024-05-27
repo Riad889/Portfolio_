@@ -6,22 +6,23 @@ const AboutMeBox = styled(Box)(({ theme }) => ({
   marginLeft: "70px",
   marginTop: "5%",
   justifyContent: "space-evenly",
+
   width: "50%", // Ensure the container has a full width
   [theme.breakpoints.down("md")]: {
     flexDirection: "column",
-    marginTop:'5%',
+    marginTop: "5%",
   },
 }));
 
-const DescriptionBox=styled(Box)(({theme})=>({
+const DescriptionBox = styled(Box)(({ theme }) => ({
   display: "flex",
   flexDirection: "column",
   width: "100%",
   marginLeft: "30px",
-  [theme.breakpoints.down("md")]:{
-    marginTop:'20px',
-  }
-}))
+  [theme.breakpoints.down("md")]: {
+    marginTop: "20px",
+  },
+}));
 
 const AboutMe = () => {
   return (
@@ -62,9 +63,7 @@ const AboutMe = () => {
           src="https://i.pinimg.com/564x/f7/0d/19/f70d19f006aa6f95630b0dc15b885f2d.jpg"
           alt="img"
         />
-        <DescriptionBox
-          
-        >
+        <DescriptionBox>
           <Typography sx={{ whiteSpace: "normal", color: "#999EA8" }}>
             Hi, I'm{" "}
             <span style={{ color: "white", fontWeight: "bold" }}>
@@ -91,7 +90,7 @@ const AboutMe = () => {
                 backgroundColor: "#4D81D1",
                 fontSize: "20px",
                 fontFamily: "Poetsen One",
-              transition:'.4s',
+                transition: ".4s",
                 "&:hover": {
                   boxShadow: "0 0 20px #4D81D1", // Increasing glow on hover
                 },
@@ -106,7 +105,7 @@ const AboutMe = () => {
                 color: "white",
                 fontFamily: "Poetsen One",
                 fontSize: "20px",
-                transition:'.4s',
+                transition: ".4s",
                 "&:hover": {
                   boxShadow: "0 0 20px #4D81D1", // Increasing glow on hover
                 },

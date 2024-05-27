@@ -7,6 +7,7 @@ import Welcome from './components/Welcome'
 import AboutMe from './components/Aboutme'
 import Portfolio from './components/Portfolio'
 import Skills from './components/Skills'
+import MyServices from './components/Services'
 
 function App() {
   
@@ -19,6 +20,7 @@ function App() {
     <AboutMe/>
     <Skills/>
     <Portfolio/>
+    <MyServices/>
     </Box>
    
     </>

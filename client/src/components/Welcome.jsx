@@ -47,22 +47,34 @@ const Welcome = () => {
   }, [words.length]);
   return (
     <>
-      <Box sx={{ marginLeft: "70px", padding: "30px", marginTop: "4%" }}>
-        <Typography variant="h3" sx={{ color: "#888C99" }}>
-          I'm a
-        </Typography>
-        <AboutText variant="h2" sx={{}}>
-          {words[currentWordIndex].split("").map((letter, index) => (
-            <AnimatedLetter
-              key={`${currentWordIndex}-${index}`}
-              style={{
-                animationDelay: `${index * 0.1}s`, // Delay each letter's animation
-              }}
-            >
-              {letter}
-            </AnimatedLetter>
-          ))}
-        </AboutText>
+      <Box
+        sx={{
+          marginLeft: "70px",
+          padding: "30px",
+          marginTop: "4%",
+         
+         
+        }}
+      >
+        <Box>
+          <Typography variant="h3" sx={{ color: "#888C99" }}>
+            I'm a
+          </Typography>
+          <AboutText variant="h2" sx={{}}>
+            {words[currentWordIndex].split("").map((letter, index) => (
+              <AnimatedLetter
+                key={`${currentWordIndex}-${index}`}
+                style={{
+                  animationDelay: `${index * 0.1}s`, // Delay each letter's animation
+                }}
+              >
+                {letter}
+              </AnimatedLetter>
+            ))}
+          </AboutText>
+        </Box>
+
+       
       </Box>
     </>
   );
